@@ -1,0 +1,40 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.products {
+    border : 1px solid rgba(0, 0, 0, 0.212);
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 20rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.products:hover img {
+    animation: scaleProduct 0.8s;
+}
+
+@keyframes scaleProduct {
+    to {transform: scale(1.055);}
+}
+
+.imgProduct {
+    overflow: hidden;
+}
+
+.nameProduct {
+    text-align: center;
+}
+
+.tryit {
+    letter-spacing: 5px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
